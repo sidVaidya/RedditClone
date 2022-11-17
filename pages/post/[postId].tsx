@@ -11,7 +11,7 @@ import Avatar from "../../components/Avatar";
 import ReactTimeago from "react-timeago";
 
 type Formdata = {
-  comment: String;
+  comment: string;
 };
 function PostPage() {
   const [ADD_COMMENTS] = useMutation(ADD_COMMENT, {

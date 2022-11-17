@@ -160,6 +160,16 @@ type Query {
       configuration: "postgresql_config"
     )
   " Queries for type 'Subreddit' "
+  getSubredditWithLimits(limits: String!): [Subreddit]
+    @dbquery(
+      type: "postgresql"
+      schema: "public"
+      query: """
+      select * from subreddit
+      limit $1
+      """
+      configuration: "postgresql_config"
+    )
   getSubreddit(id: ID!): Subreddit
     @dbquery(
       type: "postgresql"
@@ -374,12 +384,7 @@ type Mutation {
       dml: DELETE
       configuration: "postgresql_config"
     )
-  insertVote(
-    username: String
-    post_id: ID
-    created_at: DateTime
-    upvote: Boolean
-  ): Vote
+  insertVote(username: String, post_id: ID, upvote: Boolean): Vote
     @dbquery(
       type: "postgresql"
       schema: "public"

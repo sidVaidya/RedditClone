@@ -35,6 +35,7 @@ function Header() {
             }
             layout="fill"
             objectFit="contain"
+            alt={""}
           />
         </Link>
       </div>
@@ -78,6 +79,7 @@ function Header() {
               <Image
                 layout="fill"
                 src={"https://cdn-icons-png.flaticon.com/512/52/52053.png"}
+                alt={""}
               />
             </div>
             <div className="flex-1 text-xs ml-2">
@@ -96,6 +98,7 @@ function Header() {
             <Image
               layout="fill"
               src={"https://cdn-icons-png.flaticon.com/512/52/52053.png"}
+              alt={""}
             />
           </div>
           <p className="text-gray-400 ml-2">Sign in</p>

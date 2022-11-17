@@ -15,6 +15,7 @@ function Avatar({ seed, large }: any) {
       <Image
         layout="fill"
         src={`https://avatars.dicebear.com/api/human/${seed || "abcd"}.svg`}
+        alt={""}
       />
     </div>
   );
