@@ -12,9 +12,9 @@ function Avatar({ seed, large }: any) {
         large ? "h-20 w-20" : "h-10 w-10"
       }`}
     >
-      <Image
-        layout="fill"
-        src={`https://avatars.dicebear.com/api/human/${seed || "abcd"}.svg`}
+      <img
+        // layout="fill"
+        src={`https://avatars.dicebear.com/api/micah/${seed || "abcd"}.svg`}
         alt={""}
       />
     </div>

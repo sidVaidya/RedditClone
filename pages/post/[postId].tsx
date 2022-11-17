@@ -76,13 +76,14 @@ function PostPage() {
           />
           <button
             type="submit"
-            className="bg-red-500 rounded-full font-semibold disabled:bg-gray-200 p-3 text-white"
+            className="flex bg-red-500 rounded-full justify-center  w-[200px] lg:w-[500px] mx-auto
+             mb-2 font-semibold disabled:bg-gray-200 p-3 text-white"
           >
             Comment
           </button>
         </form>
       </div>
-      <div className="-my-5 rounded-b-md border border-gray-300 bg-white py-5 px-10">
+      <div className="-my-7 rounded-b-md border border-t-0 border-gray-300 bg-white py-5 px-10">
         <hr className="py-2" />
         {post?.comment.map((comments) => (
           <div

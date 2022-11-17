@@ -65,7 +65,6 @@ function Postbox({ subreddit }: Props) {
           });
         } catch (error) {}
       } else {
-        console.log("....2", getSubredditListByTopic);
         const image = formData.postImage || "";
         const { data: insertPost } = await addPost({
           variables: {
@@ -95,7 +94,7 @@ function Postbox({ subreddit }: Props) {
   return (
     <form
       onSubmit={onSubmit}
-      className="sticky top-16 z-50 bg-white rounded-md border-gray-300 p-2"
+      className="sticky top-20 z-50 bg-white rounded-md border-gray-300 p-2"
     >
       <div className="flex items-center space-x-3">
         <Avatar seed={session?.user?.name} />
